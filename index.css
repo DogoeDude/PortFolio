@@ -490,8 +490,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
+    text-align: center;
 }
-
+.work__image-box h3{
+    text-align: center;
+}
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
