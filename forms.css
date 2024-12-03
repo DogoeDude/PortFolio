@@ -1,31 +1,46 @@
-body, html {
-    padding: 0;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    height: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-.main-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+        :root {
+            --background: #09090b;
+            --foreground: #fafafa;
+            --card: #18181b;
+            --card-foreground: #fafafa;
+            --primary: #22c55e;
+            --primary-foreground: #09090b;
+            --muted: #27272a;
+            --muted-foreground: #a1a1aa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
                 url('./images/header.jpg') no-repeat center center/cover;
-    gap: 20px; /* Add spacing between elements */
-    text-align: center;
-}
+        }
 
-.main-div p {
-    color: #f0f0f0;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-}
+        .container {
+            background-color: var(--card);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
+<<<<<<< Updated upstream
 .inner-div {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     padding: 30px;
@@ -37,68 +52,79 @@ body, html {
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px); /* Adds a frosted glass effect */
 }
+=======
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+>>>>>>> Stashed changes
 
-.inner-div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
-}
+        p {
+            color: var(--muted-foreground);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
 
-label {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+        label {
+            display: block;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
 
-input[type="email"],
-textarea {
-    font-size: 14px;
-    padding: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    outline: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--muted);
+            border-radius: 0.25rem;
+            background-color: var(--muted);
+            color: var(--foreground);
+            font-size: 0.875rem;
+            transition: border-color 0.2s ease-in-out;
+        }
 
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #80bfff;
-    background-color: rgba(255, 255, 255, 0.2);
-}
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
 
-textarea {
-    resize: none;
-    height: 100px;
-}
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
 
-button {
-    background: linear-gradient(45deg, #007BFF, #00d4ff);
-    color: white;
-    font-size: 16px;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
+        button {
+            background-color: var(--primary);
+            color: var(--primary-foreground);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: opacity 0.2s ease-in-out;
+        }
 
-button:hover {
-    background: linear-gradient(45deg, #0056b3, #007BFF);
-    transform: translateY(-2px);
-}
+        button:hover {
+            opacity: 0.9;
+        }
 
+<<<<<<< Updated upstream
 button:active {
     background: linear-gradient(45deg, #004080, #0056b3);
     transform: translateY(1px);
 }
+=======
+        button:active {
+            opacity: 0.8;
+        }
+
+>>>>>>> Stashed changes
