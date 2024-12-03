@@ -27,7 +27,7 @@ body, html {
 }
 
 .inner-div {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
@@ -35,7 +35,7 @@ body, html {
     max-width: 90%;
     transition: all 0.3s ease;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+    backdrop-filter: blur(10px);
 }
 
 .inner-div:hover {
@@ -101,4 +101,23 @@ button:hover {
 button:active {
     background: linear-gradient(45deg, #004080, #0056b3);
     transform: translateY(1px);
+}
+.main-div p {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-div p:hover {
+    transform: scale(1.05); 
 }
