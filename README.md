@@ -1,6 +1,12 @@
 Description:
 This ePortfolio showcases my project for Software Engineering (CS317) at the University of Science and Technology of Southern Philippines, Cagayan de Oro (USTP CDO). The project demonstrates my ability to apply software development skills in a structured and practical environment. It was developed as part of the course requirements under the supervision of our professor and reflects various stages of software engineering principles, including design, implementation, and deployment.
 
+Interactivity using JS:
+
+    Hamburger menu - used for when the screen is at below a certain limit.
+    Back to top button - used for when the user scrolls down the page.
+    Contact form - used for when the user clicks the contact button.
+
 List of Technologies Used:
 
     HTML – To structure and organize web page content effectively.
