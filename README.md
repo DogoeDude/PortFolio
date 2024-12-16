@@ -2,12 +2,12 @@ Description:
 This ePortfolio showcases my project for Software Engineering (CS317) at the University of Science and Technology of Southern Philippines, Cagayan de Oro (USTP CDO). The project demonstrates my ability to apply software development skills in a structured and practical environment. It was developed as part of the course requirements under the supervision of our professor and reflects various stages of software engineering principles, including design, implementation, and deployment.
 
 List of Technologies Used:
+
     HTML – To structure and organize web page content effectively.
     CSS – For designing a visually appealing and responsive user interface.
     JavaScript – To implement interactive features and dynamic content.
     Live Server – To run the project using the extension live server.
     GitHub – To host the project and manage version control.
-    Formspree – To send email to the user.
 
 Instructions for Replication or Contribution:
 
