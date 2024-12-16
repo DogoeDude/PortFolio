@@ -5,24 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="./designs/forms.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("contact-form");
+
+            form.addEventListener("submit", async (event) => {
+                event.preventDefault(); // Prevent default form behavior
+
+                const formData = new FormData(form);
+
+                // Send data to Formspree
+                const response = await fetch("https://formspree.io/f/xzzbyvka", {
+                    method: "POST",
+                    headers: {
+                        Accept: "application/json",
+                    },
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    // Redirect to the main page after successful submission
+                    window.location.href = "http://127.0.0.1:5502/index.html#contact";
+                } else {
+                    alert("There was an error submitting the form. Please try again.");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="main-div">
-        <p>Please do Send an Email </p>
+        <p>Please do Send an Email</p>
         <div class="inner-div">
-            <form
-                action="https://formspree.io/f/xzzbyvka"
-                method="POST"
-                >
+            <form id="contact-form">
                 <label>
                     Your email:
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                 </label>
                 <label>
                     Your message:
-                    <textarea name="message"></textarea>
+                    <textarea name="message" required></textarea>
                 </label>
-                <!-- your other form fields go here -->
                 <button type="submit">Send</button>
             </form>
         </div>
