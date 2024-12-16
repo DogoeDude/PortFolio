@@ -7,6 +7,7 @@ List of Technologies Used:
     JavaScript – To implement interactive features and dynamic content.
     Live Server – To run the project using the extension live server.
     GitHub – To host the project and manage version control.
+    Formspree – To send email to the user.
 
 Instructions for Replication or Contribution:
 
