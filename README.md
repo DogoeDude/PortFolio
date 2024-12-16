@@ -19,6 +19,7 @@ Instructions for Replication or Contribution:
     7. Run the project using the extension live server.
 
 For Contribution:
+
     1. Fork the repository to your GitHub account.
     2. Create a new branch for your contribution.
     3. Make your changes to the code.
