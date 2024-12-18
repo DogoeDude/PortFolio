@@ -4,6 +4,11 @@ This ePortfolio showcases my project for Software Engineering (CS317) at the Uni
 
 ![image](https://github.com/user-attachments/assets/6318173d-1cfb-4bc1-a1ad-a014a6e05f96)
 
+For the development, I have taken inspiration from one of our fellow developers such as John Lloyd Omblero and Nisar.
+    Utilized my existing understanding HTML, CSS for our frontend while also having a little bit of experience for the little backend using Javascript. 
+    We then have utilized extensions in VSCode for the Live viewing and changes of the development of the ePortfolio as well as following through the instructions of 
+    Maam Raniah Taurac in deploying our application through GitHub Pages. Aside from that for the contact section, have utilized formspree as it is the most simplest
+    and most basic contacting section available for beginners.
 
 Interactivity using JS:
 
@@ -18,8 +23,9 @@ List of Technologies Used:
     JavaScript – To implement interactive features and dynamic content.
     Live Server – To run the project using the extension live server.
     GitHub – To host the project and manage version control.
+    FormSpree - Emailing the ePortfolio developer.
 
-Instructions for Replication or Contribution:
+Instructions for Replication:
 
     1. Make sure you have a code editor like VS Code installed on your machine.
     2. You should have Node.js installed on your machine.
